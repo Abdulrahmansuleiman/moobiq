@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital
+    ,wght@0,300;0,700;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesom -free@5.15.4/css/fontawesome.min.css"
+    />
+    <title>Moobiq Investment</title>
+  </head>
+  <body>
+    <div class="sub-container">
+      <nav>
+        <img src="images/logo.png" class="logo" id="logo" />
+        <ul>
+          <li><a href="index.html" id="home">Home</a></li>
+          <li>
+            <a href="http://127.0.0.1:5500/index.html#about-us">About Us</a>
+          </li>
+          <li><a href="mobic.html">Buy Mobic Credit</a></li>
+          <li>
+            <a href="http://127.0.0.1:5500/index.html#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+    </div>
+
+    <!---------------------form ---------->
+    <div class="con">
+      <div class="container3">
+        <header>Investment Form</header>
+
+        <form action="#">
+          <div class="form first">
+            <div class="details personal">
+              <span class="title2">Personal Details</span>
+
+              <div class="fields">
+                <div class="input-field">
+                  <label>Full Name</label>
+                  <input type="text" placeholder="Enter your name" required />
+                </div>
+
+                <div class="input-field">
+                  <label>Date Of Birth</label>
+                  <input
+                    type="date"
+                    placeholder="Enter your date of birth"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <label>Email</label>
+                  <input type="text" placeholder="Enter your email" required />
+                </div>
+
+                <div class="input-field">
+                  <label>Mobile Number</label>
+                  <input
+                    type="number"
+                    placeholder="Enter mobile number"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Country</label>
+                  <input
+                    type="text"
+                    placeholder="Enter your Country"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>State</label>
+                  <input type="text" placeholder="Enter your state" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="details ID">
+              <span class="title2">Next Of Kin</span>
+
+              <div class="fields">
+                <div class="input-field">
+                  <label>Full Name</label>
+                  <input type="text" placeholder="Name Required" required />
+                </div>
+
+                <div class="input-field">
+                  <label> Mobile Number</label>
+                  <input type="number" placeholder="Enter  number" required />
+                </div>
+
+                <div class="input-field">
+                  <label>Email</label>
+                  <input type="email" placeholder="Enter Email" required />
+                </div>
+
+                <div class="input-field">
+                  <label>Country</label>
+                  <input type="text" placeholder="Enter country" required />
+                </div>
+
+                <div class="input-field">
+                  <label>State</label>
+                  <input type="text" placeholder=" Enter state" required />
+                </div>
+
+                <div class="input-field">
+                  <select required>
+                    <option disabled selected>Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+              </div>
+
+              <button class="nextBtn">
+                <span class="btnText">Next</span>
+                <i class="uil uil-navigator"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="form second">
+            <div class="details address">
+              <span class="title2">Address Details</span>
+
+              <div class="fields">
+                <div class="input-field">
+                  <label>Address Type</label>
+                  <input
+                    type="text"
+                    placeholder="Permanent or Temporary"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Nationality</label>
+                  <input type="text" placeholder="Enter nationality" required />
+                </div>
+
+                <div class="input-field">
+                  <label>State</label>
+                  <input type="text" placeholder="Enter your state" required />
+                </div>
+
+                <div class="input-field">
+                  <label>District</label>
+                  <input
+                    type="text"
+                    placeholder="Enter your district"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Block Number</label>
+                  <input
+                    type="number"
+                    placeholder="Enter block number"
+                    required
+                  />
+                </div>
+
+                <div class="input-field">
+                  <label>Ward Number</label>
+                  <input
+                    type="number"
+                    placeholder="Enter ward number"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="details family">
+              <span class="title2">INVESTMENT</span>
+
+              <div class="fields">
+                <div class="input-field">
+                  <label> Full Name</label>
+                  <input type="text" placeholder="Enter  full name" required />
+                </div>
+
+                <div class="input-field">
+                  <label>Investment Amount</label>
+                  <input type="number" placeholder="Enter Amount" required />
+                </div>
+
+                <div class="input-field">
+                  <label>payment</label>
+                  <select required>
+                    <option disabled selected>Payment Method</option>
+                    <option>Transfer</option>
+                    <option>Cheque</option>
+                    <option>Deposit</option>
+                  </select>
+                </div>
+
+                <div class="input-field">
+                  <label>investment period</label>
+                  <select required>
+                    <option disabled selected>Period</option>
+                    <option>90days</option>
+                    <option>180days</option>
+                    <option>360days</option>
+                  </select>
+                </div>
+
+                <div class="input-field">
+                  <label>Gender</label>
+                  <select required>
+                    <option disabled selected>Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+
+                <div class="input-field">
+                  <label>investment type</label>
+                  <select required>
+                    <option disabled selected>select</option>
+                    <option>interest</option>
+                    <option>Equity shares</option>
+                    <option>Own a bussiness</option>
+                    <option>Mobic reserve</option>
+                    <option>Mobic Wallet top-up</option>
+                    <option>Mobic initial offering</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="buttons">
+                <div class="backBtn">
+                  <i class="uil uil-navigator"></i>
+                  <span class="btnText">Back</span>
+                </div>
+
+                <button class="sumbit">
+                  <span class="btnText">Submit</span>
+                  <i class="uil uil-navigator"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!------------footer--------------->
+
+    <footer class="footer" id="contact">
+      <div class="footer-container">
+        <div class="social-container">
+          <img src="images/icon-facebook.svg" alt="" />
+          <img src="images/icon-instagram.svg" alt="" />
+          <img src="images/icon-twitter.svg" alt="" />
+        </div>
+        <div class="menu">
+          <a href="http://127.0.0.1:5500/index.html#about-us">About us</a>
+          <a href="http://127.0.0.1:5500/index.html#portfolio">Portfolio</a>
+          <a href="index.html">Home</a>
+          <a href="http://127.0.0.1:5500/index.html#contact">Contact</a>
+        </div>
+        <div class="menu">
+          <a href="#">Support</a>
+          <a href="">Privacy Policy</a>
+          <a href=""> Contact Developer </a>
+        </div>
+      </div>
+    </footer>
+    <!------------java script------->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!-------------second java script-->
+
+    <script src="script.js"></script>
+  </body>
+</html>
